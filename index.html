@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Library Management</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<header class="header">
+	<h1 class="logo"><a href="index.html">Library Management</a></h1>
+	<ul class="main-nav">
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="#">Books</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</header>
+
+<body>
+<div class="wrapper">
+	<div id="search-container">
+		<input type="search" id="search-input" placeholder="Search Title name here.."/>
+		<button id="search">Search</button>
+	</div>
+	<div id="buttons">
+		<button class="button-value" onclick="filterProduct('all')">All Books</button>
+		<button class="button-value" onclick="filterProduct('Textbooks')">Textbooks</button>
+		<button class="button-value" onclick="filterProduct('Programming')">Programming</button>
+		<button class="button-value" onclick="filterProduct('Literature')">Literature</button>
+		<button class="button-value" onclick="filterProduct('Self-Help')">Self-Help</button>
+		<button class="button-value" onclick="filterProduct('Fiction')">Fiction</button>
+		<button class="button-value" onclick="filterProduct('Science')">Science</button>
+		<button class="button-value" onclick="filterProduct('History')">History</button>
+	</div>
+	
+	<div id="Books">
+		<!-- Books will be dynamically generated here -->
+	</div>
+</div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+<footer>
+	<div class="footer">
+		<div class="row">
+			<a href="#"><i class="fa fa-github"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+		<div class="row">
+			<ul>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms & Conditions</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</html>
